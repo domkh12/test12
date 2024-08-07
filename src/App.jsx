@@ -32,7 +32,7 @@ function App() {
         title="Showcase - Portfolio Builder for Creatives"
         description="Showcase is the ultimate portfolio builder that allows you to create, customize, and share your professional portfolio with ease. Perfect for developers, designers, and creatives, Showcase offers a variety of customizable templates and features to highlight your skills, achievements, and work experiences."
         keywords="portfolio builder, creative portfolio, developer portfolio, designer portfolio, portfolio templates, showcase, portfolio customization, online portfolio, portfolio tools"
-        url="https://your-website-url.com"
+        url="https://test12-tawny.vercel.app/"
         image="/Showcase.png"
       />
       <header>
