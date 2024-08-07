@@ -8,7 +8,6 @@ import OurTeamSection from "./components/homepage/OurTeamSection";
 import FooterSection from "./components/homepage/FooterSection";
 import ContactSection from "./components/homepage/ContactSection";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import SEO from "./components/seo/SEO";
 import ScrollToTopButton from "./components/homepage/ScrollToTopButton";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
