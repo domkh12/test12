@@ -1,3 +1,4 @@
+"use client"
 import "./App.css";
 import "./pages/template/photographyTemplate";
 import NavBarComponent from "./components/homepage/NavBarComponent";
