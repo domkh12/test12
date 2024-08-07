@@ -7,7 +7,8 @@ import FeatureSection from "./components/homepage/FeatureSection";
 import OurTeamSection from "./components/homepage/OurTeamSection";
 import FooterSection from "./components/homepage/FooterSection";
 import ContactSection from "./components/homepage/ContactSection";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
+import SEO from "./components/seo/SEO";
 import ScrollToTopButton from "./components/homepage/ScrollToTopButton";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
@@ -26,16 +27,14 @@ function App() {
       localStorage.removeItem('isEditing');
     };
   return (
-    <HelmetProvider>     
-        <Helmet>
-      <title>Showcase - Your Portfolio</title>
-      <meta name="description" content="Build and" />
-      <meta name="keywords" content="Showcase.png" />
-      <meta property="og:title" content="Showcase - Your Portfolio" />
-      <meta property="og:description" content="Build and" />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://test12-tawny.vercel.app/" />     
-      </Helmet>
+    <HelmetProvider>
+      <SEO
+        title="Showcase - Portfolio Builder for Creatives"
+        description="Showcase is the ultimate portfolio builder that allows you to create, customize, and share your professional portfolio with ease. Perfect for developers, designers, and creatives, Showcase offers a variety of customizable templates and features to highlight your skills, achievements, and work experiences."
+        keywords="portfolio builder, creative portfolio, developer portfolio, designer portfolio, portfolio templates, showcase, portfolio customization, online portfolio, portfolio tools"
+        url="https://your-website-url.com"
+        image="/Showcase.png"
+      />
       <header>
         <NavBarComponent />
       </header>
