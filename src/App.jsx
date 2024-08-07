@@ -1,4 +1,3 @@
-"use client"
 import "./App.css";
 import "./pages/template/photographyTemplate";
 import NavBarComponent from "./components/homepage/NavBarComponent";
@@ -29,41 +28,13 @@ function App() {
   return (
     <HelmetProvider>     
         <Helmet>
-        {/* General SEO Meta Tags */}
-        <title>Showcase - Portfolio Builder for Creatives</title>
-        <meta name="description" content="Showcase is the ultimate portfolio builder that allows you to create, customize, and share your professional portfolio with ease. Perfect for developers, designers, and creatives, Showcase offers a variety of customizable templates and features to highlight your skills, achievements, and work experiences." />
-        <meta name="keywords" content="portfolio builder, creative portfolio, developer portfolio, designer portfolio, portfolio templates, showcase, portfolio customization, online portfolio, portfolio tools, digital portfolio, portfolio website" />
-        
-
-        {/* Open Graph Meta Tags (Facebook, LinkedIn) */}
-        <meta property="og:title" content="Showcase - Portfolio Builder for Creatives" />
-        <meta property="og:description" content="Create, customize, and share your professional portfolio with Showcase. Ideal for developers, designers, and creatives looking to highlight their skills and achievements." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://test12-tawny.vercel.app/" />
-        <meta property="og:image" content="/Showcase.png" />
-        <meta property="og:image:alt" content="Showcase Portfolio Builder" />
-        <meta property="og:site_name" content="Showcase Portfolio Builder" />
-
-        {/* Twitter Cards Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Showcase - Portfolio Builder for Creatives" />
-        <meta name="twitter:description" content="Create, customize, and share your professional portfolio with Showcase. Perfect for developers, designers, and creatives." />
-        <meta name="twitter:url" content="https://test12-tawny.vercel.app/" />
-        <meta name="twitter:image" content="/Showcase.png" />
-        <meta name="twitter:image:alt" content="Showcase Portfolio Builder" />
-        <meta name="twitter:site" content="@YourTwitterHandle" />
-        <meta name="twitter:creator" content="@YourTwitterHandle" />
-
-        {/* Pinterest Meta Tags */}
-        <meta property="og:image" content="/Showcase.png" />
-        <meta property="og:description" content="Create, customize, and share your professional portfolio with Showcase. Perfect for developers, designers, and creatives." />
-        <meta name="pinterest-rich-pin" content="true" />
-
-        {/* LinkedIn Meta Tags */}
-        <meta property="og:title" content="Showcase - Portfolio Builder for Creatives" />
-        <meta property="og:description" content="Create, customize, and share your professional portfolio with Showcase. Ideal for developers, designers, and creatives looking to highlight their skills and achievements." />
-        <meta property="og:url" content="https://test12-tawny.vercel.app/" />
-        <meta property="og:image" content="/Showcase.png" />
+      <title>Showcase - Your Portfolio</title>
+      <meta name="description" content="Build and" />
+      <meta name="keywords" content="Showcase.png" />
+      <meta property="og:title" content="Showcase - Your Portfolio" />
+      <meta property="og:description" content="Build and" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://test12-tawny.vercel.app/" />     
       </Helmet>
       <header>
         <NavBarComponent />
