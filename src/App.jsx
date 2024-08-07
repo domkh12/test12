@@ -7,7 +7,7 @@ import FeatureSection from "./components/homepage/FeatureSection";
 import OurTeamSection from "./components/homepage/OurTeamSection";
 import FooterSection from "./components/homepage/FooterSection";
 import ContactSection from "./components/homepage/ContactSection";
-import { HelmetProvider } from "react-helmet-async";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import SEO from "./components/seo/SEO";
 import ScrollToTopButton from "./components/homepage/ScrollToTopButton";
 import { useLocation } from "react-router-dom";
