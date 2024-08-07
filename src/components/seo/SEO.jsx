@@ -1,10 +1,10 @@
+
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const SEO = ({ title, description, keywords, url, image }) => {
   return (
-    <Helmet prioritizeSeoTags>
-      <title>{title}</title>
+    <Helmet>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta property="og:title" content={title} />

@@ -1,6 +1,3 @@
-import React, { useEffect } from "react";
-import { HelmetProvider, Helmet } from "react-helmet-async";
-import { useLocation } from "react-router-dom";
 import "./App.css";
 import "./pages/template/photographyTemplate";
 import NavBarComponent from "./components/homepage/NavBarComponent";
@@ -10,46 +7,53 @@ import FeatureSection from "./components/homepage/FeatureSection";
 import OurTeamSection from "./components/homepage/OurTeamSection";
 import FooterSection from "./components/homepage/FooterSection";
 import ContactSection from "./components/homepage/ContactSection";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import ScrollToTopButton from "./components/homepage/ScrollToTopButton";
-
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import SEO from "./components/seo/SEO";
 function App() {
   const location = useLocation();
-  
+
   useEffect(() => {
-    const allowedPaths = ['/dashboard/developer', '/dashboard/business', '/dashboard/marketing', '/dashboard/photography'];
+    const allowedPaths = [
+      "/dashboard/developer",
+      "/dashboard/business",
+      "/dashboard/marketing",
+      "/dashboard/photography",
+    ];
+
     if (!allowedPaths.includes(location.pathname)) {
       clearEditingState();
     }
   }, [location]);
 
   const clearEditingState = () => {
-    localStorage.removeItem('isEditing');
+    localStorage.removeItem("isEditing");
   };
-
   return (
-    <HelmetProvider>
-      <Helmet>
-        <title>My Awesome App</title>
-        <meta name="description" content="This is an awesome application." />
-        <link rel="canonical" href={window.location.href} />
+    <>
+     <Helmet>
+        <title>My Website - Explore Amazing Templates</title>
+        <meta name="description" content="Discover our range of templates designed to showcase your creativity, skills, and business. Choose from Developer, Business, Marketing, and Photography templates." />
+        <meta name="keywords" content="templates, portfolio, business, marketing, photography, developer" />
+        <meta name="author" content="Your Name or Your Company" />
 
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="My Awesome App" />
-        <meta property="og:description" content="Check out this amazing app that does incredible things!" />
+        <meta property="og:title" content="My Website - Explore Amazing Templates" />
+        <meta property="og:description" content="Discover our range of templates designed to showcase your creativity, skills, and business." />
+        <meta property="og:image" content="/path/to/image.jpg" />
+        <meta property="og:url" content="https://mywebsite.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={window.location.href} />
-        <meta property="og:image" content="/Showcase.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="My Awesome App" />
-        <meta property="og:locale" content="en_US" />
 
-        {/* Twitter Card Meta Tags */}
+        {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="My Awesome App" />
-        <meta name="twitter:description" content="Check out this amazing app that does incredible things!" />
-        <meta name="twitter:image" content="/Showcase.png" />
-        <meta name="twitter:site" content="@yourTwitterHandle" />
+        <meta name="twitter:title" content="My Website - Explore Amazing Templates" />
+        <meta name="twitter:description" content="Discover our range of templates designed to showcase your creativity, skills, and business." />
+        <meta name="twitter:image" content="/path/to/image.jpg" />
+
+        {/* Canonical Link */}
+        <link rel="canonical" href="https://mywebsite.com" />
       </Helmet>
       <header>
         <NavBarComponent />
@@ -65,7 +69,7 @@ function App() {
         <FooterSection />
       </footer>
       <ScrollToTopButton />
-    </HelmetProvider>
+    </>
   );
 }
 
