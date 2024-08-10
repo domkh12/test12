@@ -46,6 +46,7 @@
     "react-tsparticles": "^2.12.2",
     "serve": "^14.2.3",
     "slick-carousel": "^1.8.1",
+    "vite-plugin-prerender": "^1.0.8",
     "yup": "^1.4.0"
   },
   "devDependencies": {
