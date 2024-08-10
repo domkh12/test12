@@ -31,15 +31,15 @@ function App() {
     localStorage.removeItem("isEditing");
   };  
   return (
-    <>
+    <HelmetProvider>
      <Helmet>
         <title>My Website - Explore Amazing Templates</title>
         <meta name="description" content="Discover our range of templates designed to showcase your creativity, skills, and business. Choose from Developer, Business, Marketing, and Photography templates." />
         <meta name="keywords" content="templates, portfolio, business, marketing, photography, developer" />
         <meta property="og:title" content="My Website - Explore Amazing Templates" />
         <meta property="og:description" content="Discover our range of templates designed to showcase your creativity, skills, and business. Choose from Developer, Business, Marketing, and Photography templates." />
-        <meta property="og:image" content="https://your-website-domain/your-image.jpg" /> // Replace with your image URL
-        <meta property="og:url" content={window.location.href} />
+        <meta property="og:image" content="https://cdn.pixabay.com/photo/2024/08/08/15/58/hero-8954978_960_720.png" /> // Replace with your image URL
+        <meta property="og:url" content="https://your-website-domain" /> // Replace with your website URL
         <meta property="og:type" content="website" />
       </Helmet>
       <header>
@@ -56,7 +56,7 @@ function App() {
         <FooterSection />
       </footer>
       <ScrollToTopButton />
-    </>
+    </HelmetProvider>
   );
 }
 
