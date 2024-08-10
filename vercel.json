@@ -1,25 +1,4 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/api/render"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/api/render",
-      "headers": [
-        {
-          "key": "User-Agent",
-          "value": "(bot|crawler|spider|crawling)"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
   "functions": {
     "api/render.js": {
       "runtime": "nodejs18.x"
