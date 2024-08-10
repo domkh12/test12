@@ -31,8 +31,8 @@ function App() {
     localStorage.removeItem("isEditing");
   };  
   return (
-    <HelmetProvider>
-     <Helmet prioritizeSeoTags>
+    <>
+     <Helmet>
         <title>My Website - Explore Amazing Templates</title>
         <meta name="description" content="Discover our range of templates designed to showcase your creativity, skills, and business. Choose from Developer, Business, Marketing, and Photography templates." />
         <meta name="keywords" content="templates, portfolio, business, marketing, photography, developer" />
@@ -56,7 +56,7 @@ function App() {
         <FooterSection />
       </footer>
       <ScrollToTopButton />
-    </HelmetProvider>
+    </>
   );
 }
 
