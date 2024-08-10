@@ -29,10 +29,10 @@ function App() {
 
   const clearEditingState = () => {
     localStorage.removeItem("isEditing");
-  };
+  };  
   return (
     <HelmetProvider>
-     <Helmet>
+     <Helmet prioritizeSeoTags>
         <title>My Website - Explore Amazing Templates</title>
         <meta name="description" content="Discover our range of templates designed to showcase your creativity, skills, and business. Choose from Developer, Business, Marketing, and Photography templates." />
         <meta name="keywords" content="templates, portfolio, business, marketing, photography, developer" />
@@ -59,5 +59,6 @@ function App() {
     </HelmetProvider>
   );
 }
+
 
 export default App;
