@@ -11,7 +11,6 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import ScrollToTopButton from "./components/homepage/ScrollToTopButton";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import SEO from "./components/seo/SEO";
 function App() {
   const location = useLocation();
 
@@ -37,23 +36,11 @@ function App() {
         <title>My Website - Explore Amazing Templates</title>
         <meta name="description" content="Discover our range of templates designed to showcase your creativity, skills, and business. Choose from Developer, Business, Marketing, and Photography templates." />
         <meta name="keywords" content="templates, portfolio, business, marketing, photography, developer" />
-        <meta name="author" content="Your Name or Your Company" />
-
-        {/* Open Graph Meta Tags */}
         <meta property="og:title" content="My Website - Explore Amazing Templates" />
-        <meta property="og:description" content="Discover our range of templates designed to showcase your creativity, skills, and business." />
-        <meta property="og:image" content="/path/to/image.jpg" />
-        <meta property="og:url" content="https://mywebsite.com" />
+        <meta property="og:description" content="Discover our range of templates designed to showcase your creativity, skills, and business. Choose from Developer, Business, Marketing, and Photography templates." />
+        <meta property="og:image" content="https://your-website-domain/your-image.jpg" /> // Replace with your image URL
+        <meta property="og:url" content="https://your-website-domain" /> // Replace with your website URL
         <meta property="og:type" content="website" />
-
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="My Website - Explore Amazing Templates" />
-        <meta name="twitter:description" content="Discover our range of templates designed to showcase your creativity, skills, and business." />
-        <meta name="twitter:image" content="/path/to/image.jpg" />
-
-        {/* Canonical Link */}
-        <link rel="canonical" href="https://mywebsite.com" />
       </Helmet>
       <header>
         <NavBarComponent />
