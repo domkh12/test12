@@ -36,7 +36,12 @@ import ReadMoreComponent from "./components/photography/ReadMore.jsx";
 import EditProfile from "./components/profile/EditProfile.jsx";
 import MainLayout from "./components/dashboard/MainLayout.jsx";
 import HomeDashboard from "./components/dashboard/HomeDashboard.jsx";
-import SlideUpPreview, { BusinessSlideReview, DeveloperSlideReview, MarketingSlideReview, PhotographySlideReview } from "./components/dashboard/SlideUpPreview.jsx";
+import SlideUpPreview, {
+  BusinessSlideReview,
+  DeveloperSlideReview,
+  MarketingSlideReview,
+  PhotographySlideReview,
+} from "./components/dashboard/SlideUpPreview.jsx";
 import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter([
@@ -135,15 +140,13 @@ const router = createBrowserRouter([
       },
       {
         path: "marketing",
-        element: <MarketingSlideReview/>,
-        
+        element: <MarketingSlideReview />,
       },
       {
         path: "photography",
         element: <PhotographySlideReview />,
       },
     ],
-    
   },
   {
     path: "preview/:id",
@@ -169,10 +172,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <HelmetProvider>
-  <React.StrictMode>
-    <Provider store={store}>
-      <RouterProvider router={router} />
-    </Provider>
-  </React.StrictMode>
+    <React.StrictMode>
+      <Provider store={store}>
+        <RouterProvider router={router} />
+      </Provider>
+    </React.StrictMode>
   </HelmetProvider>
 );
