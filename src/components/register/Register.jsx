@@ -85,20 +85,17 @@ export function ComponentRegister() {
         isDarkMode ? "bg-gray-900 text-gray-100" : "bg-white text-black"
       }`}
     >
-      <Helmet>
-        <meta charset="UTF-8" data-rh="true" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" data-rh="true" />
-        <meta name="description" content="Register for Showcase - Create your professional portfolio effortlessly. Join us today and start building your unique portfolio." data-rh="true" />
-        <meta name="keywords" content="register, portfolio builder, professional portfolio, website builder, Showcase" data-rh="true" />
-        <meta name="author" content="Your Name" data-rh="true" />
-        <meta property="og:title" content="Register - Showcase" data-rh="true" />
-        <meta property="og:description" content="Register for Showcase and start creating your professional portfolio. Choose from various templates and share your unique portfolio with the world." data-rh="true" />
-        <meta property="og:image" content="/Showcase.png" data-rh="true" />
-        <meta property="og:url" content="https://test12-tawny.vercel.app/register" data-rh="true" />
-        <meta property="og:type" content="website" data-rh="true" />
-        <link rel="icon" type="image/svg+xml" href="/logoHomepage.png" data-rh="true" />
-        <link rel="canonical" href="https://test12-tawny.vercel.app/register" data-rh="true" />
-        <title data-rh="true">Register - Showcase</title>
+      <Helmet>        
+        <meta name="description" content="Register for Showcase - Create your professional portfolio effortlessly. Join us today and start building your unique portfolio." />
+        <meta name="keywords" content="register, portfolio builder, professional portfolio, website builder, Showcase" />
+        <meta name="author" content="Your Name" />
+        <meta property="og:title" content="Register - Showcase" />
+        <meta property="og:description" content="Register for Showcase and start creating your professional portfolio. Choose from various templates and share your unique portfolio with the world." />
+        <meta property="og:image" content="/Showcase.png" />
+        <meta property="og:url" content="https://test12-tawny.vercel.app/register" />
+        <meta property="og:type" content="website" />      
+        <link rel="canonical" href="https://test12-tawny.vercel.app/register" />
+        <title>Register - Showcase</title>
       </Helmet>
       <button
         onClick={handleHomeClick}
