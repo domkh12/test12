@@ -33,7 +33,7 @@ export default function App() {
   };  
   return (
     <div>
-     <Helmet>     
+     {/* <Helmet>     
     <meta name="description" content="Showcase: Build and customize your professional portfolio effortlessly. Choose templates, edit content, and share your portfolio online." />
     <meta name="keywords" content="portfolio builder, professional portfolio, website builder, templates, portfolio customization, Showcase" />
     <meta name="author" content="Your Name" />
@@ -44,7 +44,7 @@ export default function App() {
     <meta property="og:type" content="website" />    
     <link rel="canonical" href="https://test12-tawny.vercel.app" />    
     <title>Showcase</title> 
-      </Helmet>
+      </Helmet> */}
       <header>
         <NavBarComponent />
       </header>
