@@ -17,6 +17,7 @@
     "@reduxjs/toolkit": "^2.2.6",
     "aos": "^2.3.4",
     "axios": "^1.7.2",
+    "express": "^4.19.2",
     "flowbite-react": "^0.10.1",
     "formik": "^2.4.6",
     "framer-motion": "^12.0.0-alpha.0",
@@ -27,6 +28,7 @@
     "react-device-detect": "^2.2.3",
     "react-dom": "^18.3.1",
     "react-dropzone": "^14.2.3",
+    "react-helmet": "^6.1.0",
     "react-helmet-async": "^2.0.5",
     "react-icons": "^5.2.1",
     "react-image-file-resizer": "^0.4.8",
@@ -47,6 +49,7 @@
     "serve": "^14.2.3",
     "slick-carousel": "^1.8.1",
     "vite-plugin-prerender": "^1.0.8",
+    "vite-plugin-ssr": "^0.4.142",
     "yup": "^1.4.0"
   },
   "devDependencies": {

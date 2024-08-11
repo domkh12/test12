@@ -7,7 +7,7 @@ import FeatureSection from "./components/homepage/FeatureSection";
 import OurTeamSection from "./components/homepage/OurTeamSection";
 import FooterSection from "./components/homepage/FooterSection";
 import ContactSection from "./components/homepage/ContactSection";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import ScrollToTopButton from "./components/homepage/ScrollToTopButton";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
@@ -31,16 +31,26 @@ function App() {
     localStorage.removeItem("isEditing");
   };  
   return (
-    <HelmetProvider>
+    <>
      <Helmet>
-        <title>My Website - Explore Amazing Templates</title>
-        <meta name="description" content="Discover our range of templates designed to showcase your creativity, skills, and business. Choose from Developer, Business, Marketing, and Photography templates." />
-        <meta name="keywords" content="templates, portfolio, business, marketing, photography, developer" />
-        <meta property="og:title" content="My Website - Explore Amazing Templates" />
-        <meta property="og:description" content="Discover our range of templates designed to showcase your creativity, skills, and business. Choose from Developer, Business, Marketing, and Photography templates." />
-        <meta property="og:image" content="https://cdn.pixabay.com/photo/2024/08/08/15/58/hero-8954978_960_720.png" /> // Replace with your image URL
-        <meta property="og:url" content="https://your-website-domain" /> // Replace with your website URL
-        <meta property="og:type" content="website" />
+     <meta charset="UTF-8" data-rh="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" data-rh="true" />
+    <meta name="description" content="Showcase: Build and customize your professional portfolio effortlessly. Choose templates, edit content, and share your portfolio online." data-rh="true" />
+    <meta name="keywords" content="portfolio builder, professional portfolio, website builder, templates, portfolio customization, Showcase" data-rh="true" />
+    <meta name="author" content="Your Name" data-rh="true" />
+    <meta property="og:title" content="Showcase - Your Professional Portfolio Builder" data-rh="true" />
+    <meta property="og:description" content="Showcase lets you create and customize your professional portfolio. Choose from templates and share your unique portfolio with the world." data-rh="true" />
+    <meta property="og:image" content="/Showcase.png" data-rh="true" />
+    <meta property="og:url" content="https://test12-tawny.vercel.app/" data-rh="true" />
+    <meta property="og:type" content="website" data-rh="true" />
+    <link rel="icon" type="image/svg+xml" href="/logoHomepage.png" data-rh="true" />
+    <link rel="canonical" href="https://test12-tawny.vercel.app/" data-rh="true" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+      data-rh="true"
+    />
+    <title data-rh="true">Showcase</title> 
       </Helmet>
       <header>
         <NavBarComponent />
@@ -56,7 +66,7 @@ function App() {
         <FooterSection />
       </footer>
       <ScrollToTopButton />
-    </HelmetProvider>
+    </>
   );
 }
 

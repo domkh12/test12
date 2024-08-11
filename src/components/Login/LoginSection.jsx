@@ -11,6 +11,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { motion } from "framer-motion"; // Import framer-motion
 import { FaTimes } from "react-icons/fa"; // Import FaTimes for the X button
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet-async";
 
 const validationSchema = Yup.object({
   email: Yup.string().email("Invalid email address").required("Required"),
@@ -81,6 +82,21 @@ function LoginSection() {
         isDarkMode ? "bg-gray-900 text-gray-100" : "bg-white text-black"
       }`}
     >
+       <Helmet>
+        <meta charset="UTF-8" data-rh="true" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" data-rh="true" />
+        <meta name="description" content="Login to Showcase - Access your professional portfolio account and continue building or editing your unique portfolio." data-rh="true" />
+        <meta name="keywords" content="login, portfolio builder, professional portfolio, website builder, Showcase" data-rh="true" />
+        <meta name="author" content="Your Name" data-rh="true" />
+        <meta property="og:title" content="Login - Showcase" data-rh="true" />
+        <meta property="og:description" content="Login to your Showcase account and access your professional portfolio. Continue creating, editing, and sharing your portfolio with ease." data-rh="true" />
+        <meta property="og:image" content="/Showcase.png" data-rh="true" />
+        <meta property="og:url" content="https://test12-tawny.vercel.app/login" data-rh="true" />
+        <meta property="og:type" content="website" data-rh="true" />
+        <link rel="icon" type="image/svg+xml" href="/logoHomepage.png" data-rh="true" />
+        <link rel="canonical" href="https://test12-tawny.vercel.app/login" data-rh="true" />
+        <title data-rh="true">Login - Showcase</title>
+      </Helmet>
       <button
         onClick={handleHomeClick}
         className={`absolute top-5 left-5 w-10 h-10 flex justify-center items-center rounded-full shadow-lg ${
