@@ -1,4 +1,4 @@
-import "./App.css";
+
 import "./pages/template/photographyTemplate";
 import NavBarComponent from "./components/homepage/NavBarComponent";
 import HeroSection from "./components/homepage/HeroSection";
