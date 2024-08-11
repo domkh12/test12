@@ -11,7 +11,8 @@ import { Helmet } from "react-helmet-async";
 import ScrollToTopButton from "./components/homepage/ScrollToTopButton";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-export function App() {
+
+export default function App() {
   const location = useLocation();
 
   useEffect(() => {
