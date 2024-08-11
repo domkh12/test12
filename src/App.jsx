@@ -34,16 +34,16 @@ export default function App() {
   return (
     <div>
      <Helmet>     
-    <meta name="description" content="Showcase: Build and customize your professional portfolio effortlessly. Choose templates, edit content, and share your portfolio online." data-rh="true" />
-    <meta name="keywords" content="portfolio builder, professional portfolio, website builder, templates, portfolio customization, Showcase" data-rh="true" />
-    <meta name="author" content="Your Name" data-rh="true" />
-    <meta property="og:title" content="Showcase - Your Professional Portfolio Builder" data-rh="true" />
-    <meta property="og:description" content="Showcase lets you create and customize your professional portfolio. Choose from templates and share your unique portfolio with the world." data-rh="true" />
-    <meta property="og:image" content="/Showcase.png" data-rh="true" />
-    <meta property="og:url" content="https://test12-tawny.vercel.app" data-rh="true" />
-    <meta property="og:type" content="website" data-rh="true" />    
-    <link rel="canonical" href="https://test12-tawny.vercel.app" data-rh="true" />    
-    <title data-rh="true">Showcase</title> 
+    <meta name="description" content="Showcase: Build and customize your professional portfolio effortlessly. Choose templates, edit content, and share your portfolio online." />
+    <meta name="keywords" content="portfolio builder, professional portfolio, website builder, templates, portfolio customization, Showcase" />
+    <meta name="author" content="Your Name" />
+    <meta property="og:title" content="Showcase - Your Professional Portfolio Builder" />
+    <meta property="og:description" content="Showcase lets you create and customize your professional portfolio. Choose from templates and share your unique portfolio with the world." />
+    <meta property="og:image" content="/Showcase.png" />
+    <meta property="og:url" content="https://test12-tawny.vercel.app" />
+    <meta property="og:type" content="website" />    
+    <link rel="canonical" href="https://test12-tawny.vercel.app" />    
+    <title>Showcase</title> 
       </Helmet>
       <header>
         <NavBarComponent />
