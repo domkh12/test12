@@ -1,0 +1,3 @@
+https://test12-tawny.vercel.app/
+https://test12-tawny.vercel.app/register
+https://test12-tawny.vercel.app/login
