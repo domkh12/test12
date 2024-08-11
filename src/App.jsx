@@ -31,7 +31,7 @@ function App() {
     localStorage.removeItem("isEditing");
   };  
   return (
-    <>
+    <div>
      <Helmet>
      <meta charset="UTF-8" data-rh="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" data-rh="true" />
@@ -66,7 +66,7 @@ function App() {
         <FooterSection />
       </footer>
       <ScrollToTopButton />
-    </>
+    </div>
   );
 }
 
