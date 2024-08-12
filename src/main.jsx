@@ -42,7 +42,7 @@ import SlideUpPreview, {
   MarketingSlideReview,
   PhotographySlideReview,
 } from "./components/dashboard/SlideUpPreview.jsx";
-
+import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter([
   {
@@ -156,7 +156,7 @@ const router = createBrowserRouter([
     path: "/login",
     element: <LoginSection />,
   },
-  {    
+  {
     path: "/register",
     element: <Register />,
   },
@@ -171,9 +171,11 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <React.StrictMode>            
-      <Provider store={store}>
+  <React.StrictMode>
+    <Provider store={store}>
+      <HelmetProvider>
         <RouterProvider router={router} />
-      </Provider>            
-    </React.StrictMode>  
+      </HelmetProvider>
+    </Provider>
+  </React.StrictMode>
 );

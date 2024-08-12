@@ -77,7 +77,7 @@ export function ComponentRegister() {
   };
 
   return (
-    <HelmetProvider>
+    
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -352,7 +352,6 @@ export function ComponentRegister() {
         />
       </section>
       <ToastContainer />
-    </motion.div>
-    </HelmetProvider>
+    </motion.div>    
   );
 }
