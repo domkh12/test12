@@ -40,9 +40,9 @@ export default function App() {
     <meta property="og:title" content="Showcase - Your Professional Portfolio Builder" />
     <meta property="og:description" content="Showcase lets you create and customize your professional portfolio. Choose from templates and share your unique portfolio with the world." />
     <meta property="og:image" content="/Showcase.png" />
-    <meta property="og:url" content="https://test12-tawny.vercel.app" />
+    <meta property="og:url" content="https://test12-tawny.vercel.app/" />
     <meta property="og:type" content="website" />    
-    <link rel="canonical" href="https://test12-tawny.vercel.app" />    
+    <link rel="canonical" href="https://test12-tawny.vercel.app/" />    
     <title>Showcase</title> 
       </Helmet>
       <header>
