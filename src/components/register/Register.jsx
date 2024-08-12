@@ -11,6 +11,7 @@ import { motion } from "framer-motion"; // Import framer-motion
 import { FaTimes } from "react-icons/fa"; // Import FaTimes for the X button
 import "react-toastify/dist/ReactToastify.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import SEO from "../seo/SEO";
 
 const validationSchema = Yup.object({
   username: Yup.string().required("Username is required"),
@@ -86,18 +87,12 @@ export function ComponentRegister() {
         isDarkMode ? "bg-gray-900 text-gray-100" : "bg-white text-black"
       }`}
     >
-      <Helmet>        
-        <meta name="description" content="Register for Showcase - Create your professional portfolio effortlessly. Join us today and start building your unique portfolio." />
-        <meta name="keywords" content="register, portfolio builder, professional portfolio, website builder, Showcase" />
-        <meta name="author" content="Your Name" />
-        <meta property="og:title" content="Register - Showcase" />
-        <meta property="og:description" content="Register for Showcase and start creating your professional portfolio. Choose from various templates and share your unique portfolio with the world." />
-        <meta property="og:image" content="/Showcase.png" />
-        <meta property="og:url" content="https://test12-tawny.vercel.app/register" />
-        <meta property="og:type" content="website" />      
-        <link rel="canonical" href="https://test12-tawny.vercel.app/register" />
-        <title>Register - Showcase</title>
-      </Helmet>
+      <SEO
+        title="Register - Showcase"
+        description="Register for Showcase - Create your professional portfolio effortlessly. Join us today and start building your unique portfolio."
+        keywords="register, portfolio builder, professional portfolio, website builder, Showcase"
+        image="/Showcase.png"
+      />      
       <button
         onClick={handleHomeClick}
         className={`absolute top-5 left-5 w-10 h-10 flex justify-center items-center rounded-full shadow-lg ${
