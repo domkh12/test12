@@ -10,7 +10,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { motion } from "framer-motion"; // Import framer-motion
 import { FaTimes } from "react-icons/fa"; // Import FaTimes for the X button
 import "react-toastify/dist/ReactToastify.css";
-import { Helmet } from "react-helmet-async";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const validationSchema = Yup.object({
   username: Yup.string().required("Username is required"),
@@ -77,6 +77,7 @@ export function ComponentRegister() {
   };
 
   return (
+    <HelmetProvider>
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -352,5 +353,6 @@ export function ComponentRegister() {
       </section>
       <ToastContainer />
     </motion.div>
+    </HelmetProvider>
   );
 }

@@ -11,7 +11,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { motion } from "framer-motion"; // Import framer-motion
 import { FaTimes } from "react-icons/fa"; // Import FaTimes for the X button
 import "react-toastify/dist/ReactToastify.css";
-import { Helmet } from "react-helmet-async";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const validationSchema = Yup.object({
   email: Yup.string().email("Invalid email address").required("Required"),
@@ -74,6 +74,7 @@ function LoginSection() {
   });
 
   return (
+    <HelmetProvider>
     <motion.main
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -258,6 +259,7 @@ function LoginSection() {
       </section>
       <ToastContainer />
     </motion.main>
+    </HelmetProvider>
   );
 }
 
