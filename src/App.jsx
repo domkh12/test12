@@ -7,7 +7,7 @@ import FeatureSection from "./components/homepage/FeatureSection";
 import OurTeamSection from "./components/homepage/OurTeamSection";
 import FooterSection from "./components/homepage/FooterSection";
 import ContactSection from "./components/homepage/ContactSection";
-import { Helmet } from "react-helmet-async";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import ScrollToTopButton from "./components/homepage/ScrollToTopButton";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
@@ -32,8 +32,8 @@ export default function App() {
     localStorage.removeItem("isEditing");
   };  
   return (
-    <div>
-     {/* <Helmet>     
+    <HelmetProvider>
+     <Helmet>     
     <meta name="description" content="Showcase: Build and customize your professional portfolio effortlessly. Choose templates, edit content, and share your portfolio online." />
     <meta name="keywords" content="portfolio builder, professional portfolio, website builder, templates, portfolio customization, Showcase" />
     <meta name="author" content="Your Name" />
@@ -44,7 +44,7 @@ export default function App() {
     <meta property="og:type" content="website" />    
     <link rel="canonical" href="https://test12-tawny.vercel.app" />    
     <title>Showcase</title> 
-      </Helmet> */}
+      </Helmet>
       <header>
         <NavBarComponent />
       </header>
@@ -59,6 +59,6 @@ export default function App() {
         <FooterSection />
       </footer>
       <ScrollToTopButton />
-    </div>
+    </HelmetProvider>
   );
 }
