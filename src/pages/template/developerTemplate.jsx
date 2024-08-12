@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { ClipLoader } from "react-spinners"; // Import the ClipLoader spinner
+import { ClipLoader } from "react-spinners"; 
 import { fetchTemplateData } from "../../redux/feature/websitetemplate/TemplateSlice";
 import { fetchWorkExperiences } from "../../redux/feature//websitetemplate/WorkExperienceSlice";
 import { fetchContacts } from "../../redux/feature/websitetemplate/ContactSlice";
