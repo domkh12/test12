@@ -169,7 +169,7 @@ const router = createBrowserRouter([
     element: <OtpGuard component={<OtpVerification />} />,
   },
 ]);
-
+console.log("router",router)
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
