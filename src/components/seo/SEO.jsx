@@ -1,29 +1,24 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 
 const SEO = ({ title, description, keywords, image }) => {
-  const currentUrl = window.location.href;
+  const location = useLocation();
+  const currentUrl = `${window.location.origin}${location.pathname}`;
   return (
     <Helmet>
+      <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
+      <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={currentUrl} />
       <meta property="og:image" content={image} />
+      <meta property="og:url" content={currentUrl} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-      <meta name="telegram:card" content="summary_large_image" />
-      <meta name="telegram:title" content={title} />
-      <meta name="telegram:description" content={description} />
-      <meta name="telegram:image" content={image} />
-      <meta name="github:card" content="summary_large_image" />
-      <meta name="github:title" content={title} />
-      <meta name="github:description" content={description} />
-      <meta name="github:image" content={image} />
     </Helmet>
   );
 };

@@ -32,7 +32,7 @@ export default function App() {
   const clearEditingState = () => {
     localStorage.removeItem("isEditing");
   };
-  const currentUrl = window.location.href;
+  
   return (
     <>
       <SEO
